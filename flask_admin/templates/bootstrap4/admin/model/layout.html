@@ -1,7 +1,7 @@
 {% macro filter_options(btn_class='dropdown-toggle') %}
-    <button class="btn {{ btn_class }}" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <a href="#" class="btn {{ btn_class }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         {{ _gettext('Add Filter') }}
-    </button>
+    </a>
     <ul class="dropdown-menu field-filters">
         {% for k in filter_groups %}
         <li class="dropdown-item">
